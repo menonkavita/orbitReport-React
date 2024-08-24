@@ -14,13 +14,15 @@ const Table = ({ sat }) => {
       </thead>
       <tbody>
         {
-          sat.map((id, data) => {
-            <tr key={id}>
-              <td>{data.name}</td>
-              <td>{data.type}</td>
-              <td>{data.launchDate}</td>
-              <td>{data.operational ? "operational" : "not-operational"}</td>
-            </tr>
+          sat.map((data, id) => {
+            return (
+              <tr key={id}>
+                <td>{data.name}</td>
+                <td>{data.type}</td>
+                <td>{data.launchDate}</td>
+                <td>{data.operational ? "operational" : "not-operational"}</td>
+              </tr>
+            )
           })
         }
       </tbody>
