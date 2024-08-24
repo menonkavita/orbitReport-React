@@ -22,7 +22,7 @@ const Table = ({ sat }) => {
                 <td>{data.name}</td>
                 <td>{data.type}</td>
                 <td>{data.launchDate}</td>
-                <td>{data.operational ? "operational" : "not-operational"}</td>
+                <td>{data.operational ? "operational" : "not operational"}</td>
               </tr>
             )
           })
